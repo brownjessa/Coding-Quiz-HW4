@@ -1,27 +1,31 @@
 var questions = [
   {
-    title: "",
-    choices: [""],
-    answer: "",
+    title: "Inside which HTML element do we put the JavaScript?",
+    choices: ["<script>", "<scripting>", "<js>", "<javascript>"],
+    answer: "<script>",
   },
   {
-    title: "",
-    choices: [""],
-    answer: "",
+    title: "Where is the correct place to insert a JavaScript?",
+    choices: [
+      "The <body> section",
+      "The <head> section",
+      "Both the <head> section and the <body> section are correct",
+    ],
+    answer: "Both the <head> section and the <body> section are correct",
   },
   {
-    title: "",
-    choices: [""],
-    answer: "",
+    title: "The external JavaScript file must contain the <script> tag.",
+    choices: ["False", "True"],
+    answer: "False",
   },
   {
-    title: "",
-    choices: [""],
-    answer: "",
+    title: "JavaScript is the same as Java.",
+    choices: ["False", "True"],
+    answer: "False",
   },
   {
-    title: "",
-    choices: [""],
-    answer: "",
+    title: "Which operator is used to assign a value to a variable?",
+    choices: ["=", "*", "x", "-"],
+    answer: "=",
   },
 ];

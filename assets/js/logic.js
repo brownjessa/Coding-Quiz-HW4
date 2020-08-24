@@ -34,3 +34,26 @@ function getQuestion() {
     choicesEl.appendChild(choiceNode);
   });
 }
+
+function questionClick() {
+  if (this.value !== questions[currentQuestionIndex].answer) {
+    time -= 15;
+    if (time < 0) {
+      time = 0;
+    }
+    timerEl.textContent = time;
+    feedbackEl.textContent = "Wrong!";
+  } else {
+    feedbackEl.textContent = "Correct!";
+  }
+  feedbackEl.setAttribute("class", "feedback");
+  setTimeout(function () {
+    feedbackEl.setAttribute("class", "feedback hide");
+  }, 1000);
+  currentQuestionIndex++;
+  if (currentQuestionIndex === questions.length) {
+    quizEnd();
+  } else {
+    getQuestion();
+  }
+}

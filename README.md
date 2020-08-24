@@ -1,8 +1,9 @@
 # Coding-Quiz-HW4
 
-Resources
+Resources used outside of class:
 
 https://www.youtube.com/watch?v=riDzcEQbX6k
+
 https://codereview.stackexchange.com/questions/92817/true-or-false-quiz-logic
 
 ! [](CodingQuizVideo.gif)

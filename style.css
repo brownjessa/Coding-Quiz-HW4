@@ -52,14 +52,30 @@ li:nth-child(odd) {
 }
 
 .wrapper {
+    margin: 100px auto 0 auto;
+    max-width: 600 px;
 }
 .hide {
+    display: none;
 }
 .start {
+    text-align: center;
 }
 .scores {
+    position: absolute;
+    top: 10 px;
+    left: 10 px;
 }
 .feedback {
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 20 px;
+    padding-top: 10 px;
+    color: grey;
+    border-top: 2px solid #ccc;
 }
 .timer {
+    position: absolute;
+    top: 10 px;
+    right: 10 px;
 }

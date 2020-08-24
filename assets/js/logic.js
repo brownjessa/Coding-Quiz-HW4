@@ -19,3 +19,18 @@ function startQuiz() {
   timerEl.textContent = time;
   getQuestion();
 }
+
+function getQuestion() {
+  var currentQuestion = questions[currentQuestionIndex];
+  var titleEl = document.getElementById("question-title");
+  titleEl.textContent = currentQuestion.title;
+  choicesEl.innerHTML = "";
+  currentQuestion.choices.forEach(function (choice, i) {
+    var choiceNode = document.createElement("button");
+    choiceNode.setAttribute("class", "choice");
+    choiceNode.setAttribute("value", choice);
+    choiceNode.textContent = i + 1 + ". " + choice;
+    choiceNode.onclick = questionClick;
+    choicesEl.appendChild(choiceNode);
+  });
+}

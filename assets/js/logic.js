@@ -74,3 +74,18 @@ function clockTick() {
     quizEnd();
   }
 }
+
+function saveHighscore() {
+  var initials = initialsEl.value.trim();
+  if (initials !== "") {
+    var highscores =
+      JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var newScore = {
+      score: time,
+      initials: initials,
+    };
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    window.location.href = "highscores.html";
+  }
+}

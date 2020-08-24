@@ -89,3 +89,9 @@ function saveHighscore() {
     window.location.href = "highscores.html";
   }
 }
+
+function checkForEnter(event) {
+  if (event.key === "Enter") {
+    saveHighscore();
+  }
+}
